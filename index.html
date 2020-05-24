@@ -23,15 +23,21 @@
             <br>
             House Keys for the Web
           </h2>
+
+        </section>
+
+        <section>
+          <h3>Who am I?</h3>
+          <img src="./assets/IMG_0143.jpg" style="height: 300px; width: auto;" alt="">
+          <p>
+            Matthew Miller
+          </p>
           <p class="social-media">
             <small>
-              Matthew Miller
-            </small>
-            <small>
               <img src="./assets/github-brands.svg" alt="Github - MasterKale" />
-              <a href="https://github.com/masterkale/">MasterKale</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/masterkale/">MasterKale</a>
               <img src="./assets/twitter-brands.svg" alt="Twitter - IAmKale" />
-              <a href="https://twitter.com/IAmKale">IAmKale</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/IAmKale">IAmKale</a>
             </small>
           </p>
         </section>
@@ -43,13 +49,13 @@
             <li class="fragment fade-in">
               Used to secure entry to private places for almost 1200 years
             </li>
-            <li class="fragment fade-in">
+            <li style="list-style: '🔐 ';" class="fragment fade-in">
               A lock requires a specific key - <strong style="color: var(--link-color)">reliable</strong>
             </li>
-            <li class="fragment fade-in">
+            <li style="list-style: '👜 ';" class="fragment fade-in">
               Easy to carry - <strong style="color: var(--link-color)">convenient</strong>
             </li>
-            <li class="fragment fade-in">
+            <li style="list-style: '💪 ';" class="fragment fade-in">
               Inconvenient to duplicate - <strong style="color: var(--link-color)">secure</strong>
             </li>
           </ul>
@@ -65,16 +71,16 @@
             </small>
           </blockquote>
           <ul>
-            <li class="fragment fade-in">
-              Poor auth systems create locks that accept multiple passwords
+            <li  style="list-style: '😬 ';" class="fragment fade-in">
+              Poor auth implementations create locks that accept multiple passwords
               - <strong style="color: var(--link-color);">not reliable</strong>
             </li>
-            <li class="fragment fade-in">
+            <li  style="list-style: '😱 ';" class="fragment fade-in">
               Difficult to remember, so users write them
               <br>down
               - <strong style="color: var(--link-color);">not convenient</strong>
             </li>
-            <li class="fragment fade-in">
+            <li  style="list-style: '🙊 ';" class="fragment fade-in">
               Very easy to duplicate, just need to dump a user DB to the internet
                - <strong style="color: var(--link-color);">not secure</strong>
             </li>
@@ -93,26 +99,44 @@
             <span style="color: #009743">Don’t Need A Password</span>
             <img src="./assets/clover.png" width="48" height="48" alt="DNAPW" style="margin: 0;">
           </h3>
-          <!-- <div class="r-stack dnapw-images">
-            <img class="fragment fade-in-then-out" src="./assets/dnapw1.png" alt="Screenshot">
-            <img class="fragment fade-in-then-out" src="./assets/dnapw2.png" alt="Screenshot">
-            <img class="fragment fade-in-then-out" src="./assets/dnapw3.png" alt="Screenshot">
-            <img class="fragment fade-in-then-out" src="./assets/dnapw4.png" alt="Screenshot">
-          </div> -->
           <video data-autoplay src="./assets/dnapw_demo.mp4" height="500" />
         </section>
 
         <section>
           <h3>What did this prove?</h3>
-          <h4>Authenticator ≈ House Key</h4>
+          <div class="column-container">
+            <p class="col">
+              <img src="./assets/yubikey-side.png" style="height: 100px; width: auto;" alt="" />
+              <br>
+              Authenticator
+            </p>
+            <p>
+              ≈
+            </p>
+            <p class="col">
+              <img src="./assets/key-side.png" style="height: 100px; width: auto;" alt="" />
+              <br>
+              House Key
+            </p>
+          </div>
         </section>
 
         <section>
-          <h3>Is this 2FA?</h3>
+          <!-- <h3>Is this 2FA?</h3> -->
+          <img src="./assets/2fa_meme.jpg" alt="Is this 2FA?">
+          <ul>
+            <li style="color: var(--link-color);">Not if it’s used to replace a password!</li>
+            <li>It can still be paired with other 2FA methods</li>
+          </ul>
         </section>
 
         <section>
           <h3>Challenges of WebAuthn</h3>
+          <ul>
+            <li style="list-style: '👶 ';">WebAuthn dev community is very nascent</li>
+            <li style="list-style: '🆘 ';">Account recovery in case of lost/replaced authenticator is more difficult</li>
+            <li style="list-style: '🦹‍♂️ ';">Stolen physical authenticator can allow others to impersonate that user</li>
+          </ul>
         </section>
 
         <section>
@@ -127,6 +151,33 @@
 
         <section>
           <h3>How do I get started?</h3>
+          <div class="column-container">
+            <div class="col">
+              <strong>Software</strong>
+              <ul>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://webauthn.guide/">Duo Security’s intro site</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/herrjemand/awesome-webauthn">Awesome WebAuthn</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/w3c/webauthn">Spec github (for discussions in Issues)</a></li>
+                <li><a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/community/webauthn-adoption/">WebAuthn Adoption Community Group</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <strong>Hardware</strong>
+              <ul>
+                <li>Yubico - Security Key NFC</li>
+                <li>SoloKeys - Solo, Somu</li>
+                <li>macOS - TouchID (Chrome)</li>
+                <li>Android - Fingerprint sensor</li>
+                <li>iOS - NFC</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            <small>
+              WebAuthn Support Matrix:
+              <a target="_blank" rel="noopener noreferrer" href="https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/">https://fidoalliance.org/fido2/fido2-web-authentication-webauthn/</a>
+            </small>
+          </p>
         </section>
 
         <section>
@@ -134,8 +185,21 @@
         </section>
 
         <section>
-          <h3>Announcing WebAuthntine</h3>
-          <h5>WebAuthn, Simplified</h5>
+          <h3>One more thing...</h3>
+          <div class="fragment">
+            <h4>The <span style="color: var(--link-color);">WebAuthntine</span> Project</h4>
+            <p class="social-media">
+              <img src="https://img.shields.io/badge/WebAuthn-Simplified-blueviolet?style=for-the-badge&logo=WebAuthn" alt="WebAuthntine Badge">
+              <small>
+                <img src="./assets/github-brands.svg" alt="">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/MasterKale/WebAuthntine">https://github.com/MasterKale/WebAuthntine</a>
+              </small>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <h3>Thank you!</h3>
         </section>
       </div>
     </div>
