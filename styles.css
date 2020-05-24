@@ -1,0 +1,30 @@
+.social-media small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.social-media img {
+  margin: 0;
+  padding: 0 10px;
+  height: 35px;
+  width: auto;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.column-container {
+  display: flex;
+  align-items: center;
+}
+
+.column-container .col {
+  flex: 1;
+}
+
+.dnapw-images img {
+  max-height: 400px;
+  width: auto;
+}

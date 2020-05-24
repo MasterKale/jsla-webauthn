@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./dist/reset.css">
     <link rel="stylesheet" href="./dist/reveal.css">
     <link rel="stylesheet" href="./dist/theme/night.css" id="theme">
+    <link rel="stylesheet" href="./styles.css">
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="./plugin/highlight/tomorrow-night-eighties.min.css" id="highlight-theme">
@@ -16,8 +17,126 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section>
+          <h2 style="color: var(--link-color);">
+            WebAuthn:
+            <br>
+            House Keys for the Web
+          </h2>
+          <p class="social-media">
+            <small>
+              Matthew Miller
+            </small>
+            <small>
+              <img src="./assets/github-brands.svg" alt="Github - MasterKale" />
+              <a href="https://github.com/masterkale/">MasterKale</a>
+              <img src="./assets/twitter-brands.svg" alt="Twitter - IAmKale" />
+              <a href="https://twitter.com/IAmKale">IAmKale</a>
+            </small>
+          </p>
+        </section>
+
+        <section>
+          <h3>The Humble Housekey</h3>
+          <img src="./assets/key-side.png" alt="House Key" class="height: 100%; width: 500px;">
+          <ul>
+            <li class="fragment fade-in">
+              Used to secure entry to private places for almost 1200 years
+            </li>
+            <li class="fragment fade-in">
+              A lock requires a specific key - <strong style="color: var(--link-color)">reliable</strong>
+            </li>
+            <li class="fragment fade-in">
+              Easy to carry - <strong style="color: var(--link-color)">convenient</strong>
+            </li>
+            <li class="fragment fade-in">
+              Inconvenient to duplicate - <strong style="color: var(--link-color)">secure</strong>
+            </li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h3>The Tragedy of the Password&nbsp;🎭</h3>
+          <blockquote>
+            <small>
+              "We 'accept' that passwords are the best we have for securing access, despite all of
+              their obvious pitfalls" - Me
+            </small>
+          </blockquote>
+          <ul>
+            <li class="fragment fade-in">
+              Poor auth systems create locks that accept multiple passwords
+              - <strong style="color: var(--link-color);">not reliable</strong>
+            </li>
+            <li class="fragment fade-in">
+              Difficult to remember, so users write them
+              <br>down
+              - <strong style="color: var(--link-color);">not convenient</strong>
+            </li>
+            <li class="fragment fade-in">
+              Very easy to duplicate, just need to dump a user DB to the internet
+               - <strong style="color: var(--link-color);">not secure</strong>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>What if we had house keys for our websites?</h3>
+          <h3>🤔</h3>
+        </section>
+
+        <section>
+          <h3>
+            Exploring the idea:
+            <br>
+            <span style="color: #009743">Don’t Need A Password</span>
+            <img src="./assets/clover.png" width="48" height="48" alt="DNAPW" style="margin: 0;">
+          </h3>
+          <!-- <div class="r-stack dnapw-images">
+            <img class="fragment fade-in-then-out" src="./assets/dnapw1.png" alt="Screenshot">
+            <img class="fragment fade-in-then-out" src="./assets/dnapw2.png" alt="Screenshot">
+            <img class="fragment fade-in-then-out" src="./assets/dnapw3.png" alt="Screenshot">
+            <img class="fragment fade-in-then-out" src="./assets/dnapw4.png" alt="Screenshot">
+          </div> -->
+          <video data-autoplay src="./assets/dnapw_demo.mp4" height="500" />
+        </section>
+
+        <section>
+          <h3>What did this prove?</h3>
+          <h4>Authenticator ≈ House Key</h4>
+        </section>
+
+        <section>
+          <h3>Is this 2FA?</h3>
+        </section>
+
+        <section>
+          <h3>Challenges of WebAuthn</h3>
+        </section>
+
+        <section>
+          <h3>Who’s backing it?</h3>
+          <ul>
+            <li class="fragment fade-in" style="color: #2584FC">Google</li>
+            <li class="fragment fade-in" style="color: #FF661D">Mozilla</li>
+            <li class="fragment fade-in" style="color: #6FBF00">Microsoft</li>
+            <li class="fragment fade-in" style="color: #FFFFFF">Apple</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>How do I get started?</h3>
+        </section>
+
+        <section>
+          <h3>Let’s empower users to lock up their accounts!</h3>
+        </section>
+
+        <section>
+          <h3>Announcing WebAuthntine</h3>
+          <h5>WebAuthn, Simplified</h5>
+        </section>
       </div>
     </div>
     <script type="module">
@@ -32,6 +151,8 @@
         hash: true,
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [ RevealMarkdown, RevealHighlight ],
+        width: 1100,
+        height: 700,
       });
     </script>
   </body>
