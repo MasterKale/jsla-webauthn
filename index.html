@@ -59,11 +59,10 @@
               Inconvenient to duplicate - <strong style="color: var(--link-color)">secure</strong>
             </li>
           </ul>
-
         </section>
 
         <section>
-          <h3>The Tragedy of the Password&nbsp;🎭</h3>
+          <h3>The Tragedy of the Password</h3>
           <blockquote>
             <small>
               "We 'accept' that passwords are the best we have for securing access, despite all of
@@ -71,16 +70,16 @@
             </small>
           </blockquote>
           <ul>
-            <li  style="list-style: '😬 ';" class="fragment">
+            <li  style="list-style: '🙊 ';" class="fragment">
               Poor auth implementations create locks that accept multiple passwords
               - <strong style="color: var(--link-color);">not reliable</strong>
             </li>
-            <li  style="list-style: '🙊 ';" class="fragment">
+            <li  style="list-style: '🙉 ';" class="fragment">
               Difficult to remember, so users write them
               <br>down
               - <strong style="color: var(--link-color);">not convenient</strong>
             </li>
-            <li  style="list-style: '😱 ';" class="fragment">
+            <li  style="list-style: '🙈 ';" class="fragment">
               Very easy to duplicate, just need to dump a user DB to the internet
                - <strong style="color: var(--link-color);">not secure</strong>
             </li>
@@ -88,7 +87,7 @@
         </section>
 
         <section>
-          <h3>What if we had house keys for our websites?</h3>
+          <h3>What if we could have house keys for our websites?</h3>
           <h3>🤔</h3>
         </section>
 
@@ -99,7 +98,7 @@
             <span style="color: #009743">Don’t Need A Password</span>
             <img src="./assets/clover.png" width="48" height="48" alt="DNAPW" style="margin: 0;">
           </h3>
-          <video data-autoplay src="./assets/dnapw_demo.mp4" height="500" />
+          <video controls src="./assets/dnapw_demo.mp4" height="500" />
         </section>
 
         <section>
@@ -122,11 +121,17 @@
         </section>
 
         <section>
-          <!-- <h3>Is this 2FA?</h3> -->
-          <img src="./assets/2fa_meme.jpg" alt="Is this 2FA?">
+          <h3>Benefits of WebAuthn</h3>
           <ul>
-            <li style="color: var(--link-color);">Not if it’s used to replace a password!</li>
-            <li>It can still be paired with other 2FA methods</li>
+            <li style="list-style: '🔐 ';" class="fragment">
+              Authenticators can hold many keys - <strong style="color: var(--link-color)">reliable</strong>
+            </li>
+            <li style="list-style: '👜 ';" class="fragment">
+              Easy to carry - <strong style="color: var(--link-color)">convenient</strong>
+            </li>
+            <li style="list-style: '💪 ';" class="fragment">
+              Inconvenient to duplicate - <strong style="color: var(--link-color)">secure</strong>
+            </li>
           </ul>
         </section>
 
@@ -136,6 +141,15 @@
             <li class="fragment" style="list-style: '👶 ';">WebAuthn dev community is very nascent</li>
             <li class="fragment" style="list-style: '🆘 ';">Account recovery in case of lost/replaced authenticator is more difficult</li>
             <li class="fragment" style="list-style: '🦹‍♂️ ';">A stolen authenticator can allow a bad actor to impersonate a user</li>
+          </ul>
+        </section>
+
+        <section>
+          <!-- <h3>Is this 2FA?</h3> -->
+          <img src="./assets/2fa_meme.jpg" alt="Is this 2FA?">
+          <ul>
+            <li style="color: var(--link-color);">Not if it’s used to replace a password!</li>
+            <li>It can still be paired with other 2FA methods</li>
           </ul>
         </section>
 
