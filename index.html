@@ -232,6 +232,7 @@
       import Reveal from './dist/reveal.esm.js';
       import RevealMarkdown from './plugin/markdown/markdown.esm.js';
       import RevealHighlight from './plugin/highlight/highlight.esm.js';
+      import RevealNotes from './plugin/notes/notes.esm.js';
 
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -239,7 +240,7 @@
       Reveal.initialize({
         hash: true,
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [ RevealMarkdown, RevealHighlight ],
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
         width: 1100,
         height: 700,
       });
